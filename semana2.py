@@ -5,8 +5,7 @@ import pandas as pd
 def main():
     st.title('AceleraDev Data Science')
     st.subheader('Semana 2 - Pré-processamento de Dados em Python')
-    #file  = st.file_uploader('Escolha a base de dados que deseja analisar (.csv)', type = 'csv')
-    file  = 'black_friday.csv'
+    file  = st.file_uploader('Escolha a base de dados que deseja analisar (.csv)', type = 'csv')
     if file is not None:
         st.subheader('Estrutura')
         df = pd.read_csv(file)
