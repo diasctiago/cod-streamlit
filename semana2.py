@@ -48,6 +48,5 @@ def main():
         st.write('Podemos afirmar que se uma observação é null em Product_Category_2 ela também o é em Product_Category_3:', len(df.isna().query('Product_Category_2 == True & Product_Category_3 == False')) == False)
         st.write('Sugestão: len(df.isna().query(\'Product_Category_2 == True & Product_Category_3 == False\')) == False')
         
-
 if __name__ == '__main__':
 	main()
