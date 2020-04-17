@@ -3,7 +3,9 @@ import pandas as pd
 
 
 def main():
-    print('Hello World!')
+    st.title('AceleraDev Data Science')
+    st.subheader('Semana 2 - Pré-processamento de Dados em Python')
+
         
 if __name__ == '__main__':
 	main()
