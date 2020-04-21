@@ -5,6 +5,7 @@ import seaborn as sns
 
 
 def main():
+    st.image('codenationTD.png',format='PNG')
     st.title('AceleraDev Data Science')
     st.subheader('Semana 2 - Pré-processamento de Dados em Python')
     file  = st.file_uploader('Escolha a base de dados que deseja analisar (.csv)', type = 'csv')
@@ -29,18 +30,15 @@ def main():
             st.markdown('Podemos observar as relações estre as colunas e a intensidade de cada relacionamento')
             sns.heatmap(df.corr(),annot=True)
             st.pyplot()
-            
         if st.checkbox("Colunas com Nulos"):
             st.markdown('Podemos observar quais as colunas possuem valores nulos e sua quantidade')
             plt.barh(list(df.columns), df.isna().sum().values)
             st.pyplot()
-            
         if st.checkbox("Histograma com Pyplot"):
             st.markdown('Podemos observar o histograma de cada coluna do dataset de acordo com a seleção abaixo')
             option = st.selectbox('Selecione a coluna',list(df.columns))
             plt.hist(sorted(df[option].values))
             st.pyplot()
-            
         if st.checkbox("Scatter com Pyplot"):
             st.markdown('Podemos observar dispersão entre duas colunas de acordo com a seleção abaixo')
             selecao1 = st.selectbox('Selecione a primeira coluna',list(df.columns))

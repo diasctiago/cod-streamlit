@@ -1,4 +1,0 @@
-$ cat .gitignore
-
-black_friday.csv
-.ipynb_checkpoints
