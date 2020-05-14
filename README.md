@@ -21,4 +21,4 @@ Ainda no desafio da Codenation, uma sugestão era a gravação de um video para 
 
 ### Link
 
-Acesse a aplicação aqui <https://cod-streamlit.herokuapp.com>
+Acesse a aplicação aqui ---\> <https://cod-streamlit.herokuapp.com>
